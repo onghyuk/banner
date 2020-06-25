@@ -4,76 +4,335 @@
     <meta charset="UTF-8">
     <title></title>
     
- 
-
     <style>
+        
         body{
-             font-family: 'Noto Sans KR', sans-serif;
-            
+            background-color: white;
         }
         
         p{
-            font-size: 14px;
-            line-height: 19px;
-           
+            font-size: 35px;
+            color:black;
+            font-family: 'Noto Sans KR', sans-serif;
+            font-weight: 700;
+            line-height: 65px;
+            
+            
         }
+        
+       div{
+            transition-property: width;
+            transition-duration: 3s;
+            transition-delay: 0.5s;  
+        }
+        
+        
+        
         .wrapper{
             display: grid;
-            grid-template-columns: 2fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr;
+            max-width: 100%;
+            margin-top: 2%;
+          
+        }
+        
+        .photo{
+            width: 33vw;
+            min-width: 30vw;
+            height: 100vh;
             
+            
+            transition-property: width;
+            transition-duration: 5s;
+            transition-delay: 1s; 
+            
+            
+        }
+        
+        .photo:hover{
+            width: 98.5vw;
         }
         
         .content{
+            width: 33vw;
+            min-width: 30vw;
+            height: 100vh;
             
-            margin-left: 12vw;
-            margin-top: 20vh;
-            margin-bottom: 30vh;
+          
         }
         
-        .ad{
+        .father{
+            width: 33vw;
+            min-width: 30vw;
+            height: 100vh;
+            <!--
+            outline-style: dotted;
+            outline-width: 1px;
+            -->
+            transition-property: width;
+            transition-duration: 3s;
+            transition-delay: 1s;  
             
-            margin-left: 3vw;
-             margin-top: 20vh;
         }
         
-        .title{
-            
-           
+        .father:hover{
+            width: 60vw;
         }
         
+        .text{
+            width: 700px;
+            overflow-x: hidden;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
         
-        
-    </style>
     
-       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap" rel="stylesheet">
-       
+        
+        iframe{
+            position: relative; left: 50%; transform: translateX(-50%); margin-bottom: 20px; width: 70%; height: 30%;
+        }
+        
+        img{
+            position: relative; left: 50%; transform: translateX(-50%); 
+        }
+        
+        
+
+        
+        
+                                .mySlides {display: none}
+                                img {vertical-align: middle;}
+
+                                /* Slideshow container */
+
+
+                                /* Next & previous buttons */
+                                .prev, .next {
+                                  cursor: pointer;
+                                  position: absolute;
+                                  top:4%;
+                                  left:12%;
+                                  color: black;
+                                  font-size: 20px;
+
+                                }
+
+                                /* Position the "next button" to the right */
+                                .next {
+                                  margin-left: 13px;
+
+                                }
+
+                                /* On hover, add a black background color with a little bit see-through */
+                                .prev:hover, .next:hover {
+                                  background-color: rgba(0,0,0,0.8);
+                                }
+
+
+
+                                /* Fading animation */
+                                .fade {
+                                  -webkit-animation-name: fade;
+                                  -webkit-animation-duration: 1.5s;
+                                  animation-name: fade;
+                                  animation-duration: 1.5s;
+                                }
+
+                                @-webkit-keyframes fade {
+                                  from {opacity: .4} 
+                                  to {opacity: 1}
+                                }
+
+                                @keyframes fade {
+                                  from {opacity: .4} 
+                                  to {opacity: 1}
+                                }
+
+                                /* On smaller screens, decrease text size */
+                                @media only screen and (max-width: 300px) {
+                                  .prev, .next,.text {font-size: 11px}
+                                }
+         
+        
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">        
+    </style>
 </head>
 <body>
- <div class="wrapper">
-          <div class="content">
-            <h2 class="title">현수막에 대하여.</h2>
-            <a href="numbers.html"><img src="01.gif" style="width: 90%;"></a>
-            <p style="margin-top: 30px; max-width: 700px;">‘실종된 OOO좀 찾아주세요’ 현수막을 관측하기 시작한 것은 안성에 거주하며 서울로 오가던 2018년부터이다.</p>
-            <p>현수막에 대한 기록을 시작한 것은 2018년 여름부터이다.</p>
-            <p>2020년 05월 기준. 서울과 평택을 오가며 직접 관측한 현수막의 수는 35개이다.<br>
-이 중 최근 한달간 새롭된 관측된 현수막의 수는 3개이다. (안성 휴게소, 종각, 청계 4가 교차로)</p>
-            <p>현수막은 2016-2018년중에는 하늘색 디자인이었다. <br> 그 이전에는 노란색 디자인이었고, 약 1년전 다시 노란색 디자인으로 변경되었다.</p>
-            <p>최근 6개월간 현수막의 문구는 <br> 실종된 OOO좀 찾아주세요.<br> 실종된 OOO을 찾아주세요.<br> 실종된 OOO를 찾아주세요.로 변경되었다. </p>
-            <p>OOO은 1999년에 실종되었다.</p>
-            <p>OOO의 실종사건이 포함된 뉴스기사가 처음 나온 것은 2002년이다.<br> OOO의 실종사건에 대한 단독 뉴스기사가 처음 나온 것은 2011년이다.<br>가장 최근 기사는 2020년 5월 30일 조선일보의 기사이다. </p>
-            <p>네이버 뉴스검색으로는 현재 161건의 기사가 검색된다. </p>
-            <p>구글에 OOO을 검색하면 17,600개의 결과가 나온다.</p>
-            <p>#OOO을 인스타그램에 검색하면 76개의 게시글이 검색된다.</p>
-            <p>동명의 유명인이 없어, 대부분의 검색 결과는 실종된 OOO에 관한 것이다.</p>
+    <div class="wrapper">
+        <div class="photo" style="overflow: scroll;">
+               
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+               
+               
+                <div class="mySlides fade">
+                    <img src="img/01/2.png" width="70%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/01/1.png" width="70%">
+                </div>
+                    
+                
+                    
+                <div class="mySlides fade">
+                    <img src="img/01/3.png" width="70%">
+                </div>
+                   
+                <div class="mySlides fade">
+                    <img src="img/01/4.png" width="70%">
+                </div>
+                   
+                <div class="mySlides fade">
+                    <img src="img/01/5.png" width="70%">
+                </div>
+                    
+                <div class="mySlides fade">
+                    <img src="img/01/6.png" width="70%">
+                </div>    
+                   
+                <div class="mySlides fade">
+                    <img src="img/01/7.png" width="70%">
+                </div>   
+                    
+                <div class="mySlides fade">
+                    <img src="img/01/8.png" width="70%">
+                </div>    
+                
+                <div class="mySlides fade">
+                    <img src="img/01/11.png" width="70%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/01/12.png" width="70%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/01/13.png" width="70%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/01/9.png" width="40%">
+                </div>
+                
+                <div class="mySlides fade">
+                    <img src="img/01/10.png" width="40%">
+                </div>
+                
+                
+        </div>
+        
+    
+        <div class="father" style="overflow: scroll;">
             
-          </div>
+                        <div class="text">
+                                    <p style="margin-top: -8px;">혜희야! 항상 이 아빠가 너를 찾고 있단다. 건강히<br> 살아만 있어다오! 널 찾을 수만 있다면 어떤 일도<br> 참고 견딜 것이다. 사랑하는 나의 딸 너무나도 보고 싶구나.<br>...<br></p>
 
-          <div class="ad">
-              <a href="numbers.html"><img src="02.gif" style="width: 70%"></a>
-              <a href="numbers.html"><img src="03.gif" style="width: 70%"></a>
-              <a href="numbers.html"><img src="04.gif" style="width: 70%"></a>
+                                    <p>혜희는 어딘가 분명 살아있을 것이다. 눈 감기 전에 한 번이라도 꼭 보고 싶다.
+                                    지금도 우리 혜희만 찾을 수 있게 해준다면야 목숨도 기꺼이 내줄 수 있다.<br> 이번 주말도 나는 전단을 돌릴 것이다.
+                                    <br>...<br>
+                                    </p>
+                                    
+                                    <p>
+                                    집에 가면 벽이 온통 혜희 사진이에요. 잠자리에<br> 누울 때도 일어날 때도 그것부터 보입니다. 우리 <br>부부는 딸을 잃고 생업을 포기했어요. 3년 동안<br> 화물차 끌고 전국을 다 돌아다녔어요. 맨 정신으론 힘들어 술 마시고 전단 돌리고 라면 먹고 또 <br>전단 돌리고…. 그러다 모두 알코올중독자가 <br>됐습니다.<br>
+                                    <br>...<br>
+                                       
+                                    그때부턴 죽는 거 포기하고 혜희를 찾는 데 전념했어요. 잊으려야 잊을 수가 없는 거요. 이대로는 눈을 감을 수 없어요. 살아서 혜희를 보지 못하면 죽어도 저승에 가지 못할 것 같아요. 귀신이 돼서라도 찾을 거요.<br>
+                                    
+                                    나한테 10만원은 현수막 4장 또는 전단 한 뭉치(4000장)와 같아요. 예전처럼 공사장에서 막일을 할 수도 없어 지금은 폐지를 주워 팝니다.<br><br>
+                                    ...<br>
 
-          </div>
-  </div>
+                                    현수막을 걸고 전단을 돌려야 마음이 편해요. 그래야 잠을 잘 수 있습니다. 주말마다 이렇게 서울에 와요. 평일에는 복잡해서 트럭을 대고 현수막을 걸 수가 없으니까.<br><br>
+
+                                    지금 전국에 걸린 '실종된 송혜희 좀 찾아주세요'<br> 현수막이 300장입니다. 길목마다 '내 자식'이 붙어 있어요. 나는 이걸 안 하면 그냥 죽은 목숨이에요.<br> 마음속으로 혜희 엄마한테도 말하곤 해요. 여보, 내가 혜희 반드시 찾아낼 거야. 당신도 좀 도와줘.<br>
+                                    <br>...<br>    
+                                        꿈에서라도 보고 싶은데 한 번도 나타나질 않았어요. 하도 이상해서 무속인들한테 물어봤는데 "그럼 됐다"고 해요. 꿈에 나오면 이미 죽은 사람이라는 거요. 혜희는 아직 살아 있구나. 거리에서 30대 후반 여자분을 보면 '내 딸도 저렇게 컸겠구나' 생각해요.<br><br></p>
+                                    
+                   </div>
+        </div>
+        
+        <div class="content" style="overflow: scroll;">
+            
+               
+               
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/1OGkkVGg8XA?modestbranding=0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/BP3YtbE-QfY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/r91dNZafJTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+            
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/BUR9R6bV4xI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+               
+                
+                
+                
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/TccxlBRH-a8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/2zGawZlmpR4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/wi6SY4WXzcI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/6-dnaHDsLd8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/3X-r3H7Uioo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/5ohAKTrJEf4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="90%" height="40%" src="https://www.youtube.com/embed/pmBa7315tPM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                
+                <iframe width="60%" height="20%" src="https://www.youtube.com/embed/U_6bzkV1Rw4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <iframe width="60%" height="20%" src="https://www.youtube.com/embed/eI3Cj3SQA3A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <a href="numbers.html"><img src="01.gif" width="70%" class="button" style="margin-bottom: 20px;"></a>
+                
+                
+                
+                
+                
+               
+                
+                
+                
+                
+                
+                
+               
+        </div>
+        
+    </div>
+    
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
 </body>
 </html>
